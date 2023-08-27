@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
     <header id="header">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." class="profile"/>
     </header>
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
+          <li>Hypertext Markup Language</li>
+          <ul>
+            <li>Standard markup language for creating Web pages.</li>
+            <li>HTML describes the structure of a Web page.</li>
+          </ul>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
           <li>Semantic HTML elements can be understood by both Users and Developers. Example: body, title, header, footer</li>
@@ -25,7 +31,67 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>Cascading Style Sheets (CSS)</li>
+          <ul>
+            <li>Programming language used by developers to define how webpage content is presented to users.</li>
+          </ul>
+          <li>Inline CSS</li>
+          <ul>
+            <li>Style an element directly in the HTML file</li>
+            <li>A single change to the CSS rule will apply to all tagged page elements.</li>
+            <li>Useful for quick and permanent change</li>
+            <li>Less flexible, because each inline style must be edited individually whenever you make a design change.</li>
+            <li>Ex: (h1 style="color:red;")Prework Study Guide(/h1)</li>
+          </ul>
+          <li>Internal style sheet</li>
+          <ul>
+            <li>May be used if one single HTML page has a unique style.</li>
+            <li>Configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code.</li>
+            <li>*A single change to the CSS rule will apply to all tagged page elements.*</li>
+          </ul>
+          <li>External CSS style sheet</li>
+          <ul>
+            <li>Most common way to style a webpage</li>
+            <li>Preferred in most cases because it allows developers to keep all their CSS rules in a separate file.</li>
+            <li>When using an external style sheet, we link the file using a (link) element placed in the HTML's (head) element.</head></li>
+          </ul>
+          <li>CSS Rule</li>
+          <ul>
+            <li>Declarations contain two important components:</li>
+            <ul>
+              <li>The CSS property we want to apply.</li>
+              <li>The value of the property.</li>
+            </ul>
+            <li>In the example, the declaration color: blue; includes the CSS property color and the value for that property, blue.</li>
+            <img src="assets/css-rule.png" class="cr"/>
+            <li>margin property</li>
+            <ul>
+              <li>Acts much like a margin in a word processing document.</li>
+              <li>Indicates how much space we want around the *outside* of an element.</li>
+              <li>When the margin property is set to 0, we are indicating that we want NO extra space around the element.</li>
+            </ul>
+            <li>padding property</li>
+            <ul>
+              <li>Often confused with margin</li>
+              <li>Adds space around the content *inside* an element.</li>
+              <li>Increase padding will make the entire element bigger because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer outside an element.</li>
+              <li>To understand this better, it is important to know that every HTML element is essentially a box. Each box consists of margins outside the element, and the element's borders, padding, and content. This is sometimes referred to as the CSS box model. The image below illustrates this box model:</li>
+              <img src="assets/box-model.png" class="bm"/>
+            </ul>
+            <li>To apply a rule to all the elements visible on the page, we use the * symbol.</li>
+            <ul>
+              <li>In this rule, we have declared that ALL of the elements on the page will have the style properties margin and padding set as 0:</li>
+              <img src="assets/all-visible-elements.png" class="ave"/>
+            </ul>
+            <li>Rather than repeating a rule which would add more lines of code and repetition, two or more elements that will share the same styling can be grouped together. This helps us write Do Not Repeat Yourself (DRY) code.</li>
+            <ul>
+              <li>Do Not Repeat Yourself (DRY) is a coding principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines of code that need to be written or maintained. DRY can greatly reduce the overall size and complexity of a codebase.</li>
+            </ul>
+            <li>Class Attribute</li>
+            <ul>
+              <li>Class attributes allow us to share a CSS rule to any element wo choose by assigning the rule to a class attribute with a class selector. Then the class attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule.</li>
+            </ul>
+          </ul>
         </ul>
       </section>
    
