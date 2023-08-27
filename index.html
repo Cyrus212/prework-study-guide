@@ -18,13 +18,27 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
+          <li>*Case-Sensitive*</li>
           <li>Hypertext Markup Language</li>
           <ul>
             <li>Standard markup language for creating Web pages.</li>
             <li>HTML describes the structure of a Web page.</li>
           </ul>
+          <li>Common Content Elements</li>
+          <ul>
+            <li>Text</li>
+            <li>Image</li>
+            <li>Header</li>
+            <li>List</li>
+          </ul>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
+          <li>Common Divide and Descriptive Elements</li>
+          <ul>
+            <li>Meta-related elements</li>
+            <li>Content division elements</li>
+            <li>Semantic elements</li>
+          </ul>
           <li>Semantic HTML elements can be understood by both Users and Developers. Example: body, title, header, footer</li>
           <li>Non-Semantic HTML elements are mainly understood by Developers. Example: h1, p, li, ul</li>
         </ul>
@@ -103,8 +117,12 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>A version control system that lets you manage and keep track of each version of your project</li>
+          <li>GitHub</li>
+          <ul>
+            <li>cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.</li>
+            <li>Using GitHub not only allows us to store our code, but also to easily collaborate with others.</li>
+          </ul>
           <li>The Main branch is live and is what the End-User can see.</li>
           <li>The Develop branch serves as an integration branch for features.</li>
           <ul>
@@ -112,16 +130,39 @@
           </ul>
           <li>The Feature branch uses the Develop branch as their Parent branch. </li>
           <ul>
-            <li>git checkout -b "feature_branch" : *Make sure to not be on the Main branch*</li>
+            <li>git checkout -b "feature_branch"</li>
           </ul>
-          <li>Features should never interact directly with the Main branch.</li>
           <li>It's also convenient to tag all commits in the Main branch with a version number.</li>
+          <li>Common commands: ,  ,  , </li>
+          <ul>
+            <li>git add -A</li>
+            <ul>
+              <li>Applies changes to the branch before commit.</li>
+            </ul>
+            <li>git commit -m "message"</li>
+            <ul>
+              <li>Commits can be thought of as snapshots or milestones along the timeline of a Git project.</li>
+            </ul>
+            <li>git push origin "branch_name"</li>
+            <ul>
+              <li>Used to upload local repository content to a remote repository.</li>
+            </ul>
+            <li>git pull origin "branch_name"</li>
+            <ul>
+              <li>used to fetch and download content from a remote repository and immediately update the local repository to match that content.</li>
+            </ul>
+            <li>git checkout "feature_branch"</li>
+            <ul>
+              <li>Lets you navigate between the branches created by git branch.</li>
+            </ul>
+          </ul>
         </ul>
       </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
+          <li>*Case-Sensitive*</li>
           <li>JavaScript is a powerful programming language that can add interactivity to a website.</li>
           <li>Control flow</li>
           <ul>
